@@ -21,9 +21,9 @@ def get_args():
                                      formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('-i', '--input', required=True,
                         help='Training SVMlight format file(s)', type=str, nargs='+',)
-    parser.add_argument('-j', '--valid', required=False, default=None,
+    parser.add_argument('-v', '--valid', required=False, default=None,
                         help='Testing SVMlight format file(s)', type=str, nargs='*',)
-    parser.add_argument('-k', '--test', required=False, default=None,
+    parser.add_argument('-t', '--test', required=False, default=None,
                         help='Validation SVMlight format file(s)', type=str, nargs='*',)
     parser.add_argument('-p', '--processes',
                         help='Number of parallel processes (default: -1, i.e. all cores).',
