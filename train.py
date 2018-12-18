@@ -90,3 +90,5 @@ def svm_rbf_param_grid():
     return param_grid
 
 
+if __name__ == '__main__':
+    main()
